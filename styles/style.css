@@ -7,3 +7,145 @@
   font-weight: 400;
   font-style: normal;
 }
+/* shared styles */
+.display-flex {
+  display: flex;
+}
+.bg-light{
+background-color: rgba(255, 144, 14, 0.1);
+}
+.btn-primary{
+    background-color: rgb(255, 142, 13);
+    color: white;
+    font-weight: 600;
+    font-size: 1rem;
+    border-radius: 0.8rem;
+    width: 180px;
+    height: 44px;
+    border: none;
+    margin-bottom: 12px;
+}
+.main{
+    max-width: 1200px;
+    margin: 0 auto;
+}
+/* dark-02 */
+.text-grey{
+    color: #424242;
+}
+/* dark-03 */
+.text-light-grey{
+    color: #727272;
+}
+/* Header styles */
+header{
+    margin-bottom: 50px;
+}
+
+/* navbar styles */
+.brand{
+    font-weight: bold;
+    font-size: 2rem;
+}
+.nav-item {
+    list-style: none;}
+
+.nav-container, .banner-container{
+    max-width: 1440px;
+    margin:0 auto;
+}
+
+.nav-container{
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 20px;
+}
+.nav-item a {
+    text-decoration: none;
+    font-weight:500;
+    margin: 30px;
+    
+}
+/* banner related styles */
+.banner-content{
+    max-width: 850px;
+    margin: 0 auto;
+    text-align: center;
+    margin-bottom: 50px;
+}
+.banner-title{
+    font-weight: 700;
+    font-size: 4rem;
+}
+.banner-img{
+    display: flex;
+    justify-content: center;
+}
+.banner-img img{
+    width: 80%;
+    margin-bottom: 50px;
+}
+/* features section style here */
+.teams{
+    justify-content: center;
+    align-items: center;
+    gap: 0.7rem;
+}
+.team-img-container{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.7rem;
+}
+.our-features{
+    /* text-align: center; */
+    padding: 20px;
+}
+/* facts styles starts here */
+.facts-container{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    place-items: center;
+    align-items: center;
+    gap: 24px;
+    margin-top: 4rem;
+
+}
+.fact{
+    text-align: center;
+    padding: 10px;
+    border: 1px solid #FF900E;
+    box-shadow: #727272;
+    width: 220px;
+    height: 220px;
+    border-radius: 8px;
+    padding-top: 50px;
+}
+.section-title{
+    font-weight: 700;
+    font-size: 2rem;
+}
+/* Responsive Media Query */
+@media screen and (max-width: 576px) {
+    .nav-container, 
+    .nav-links,
+     .teams{
+        flex-direction: column;
+    }
+    .team-img-container{
+    grid-template-columns: repeat(1, 1fr);
+    }
+    .facts-container{
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .fact{
+        width: 12rem;
+    }
+}
+
+
+/* medium screen */
+@media screen and (min-width:576px) and (max-width: 992px){
+    .teams{
+        flex-direction: column;
+    }
+}
